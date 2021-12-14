@@ -3,7 +3,6 @@ on:
     inputs:
       time_limit_minutes:
         required: true
-        type: int
 
 jobs:
   test:
