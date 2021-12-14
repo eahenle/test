@@ -4,9 +4,6 @@ on:
       time_limit_minutes:
         required: true
 
-env:
-  foo: ${{ time_limit_minutes }}
-
 jobs:
   test:
     runs-on: ubuntu-latest
