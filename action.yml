@@ -4,8 +4,11 @@ on:
       time_limit_minutes:
         required: true
 
+env:
+  foo: ${{ inputs.time_limit_minutes }}
+
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ inputs.time_limit_minutes }}
+      - run: echo ${{ env.time_limit_minutes }}
